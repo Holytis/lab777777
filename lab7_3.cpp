@@ -1,7 +1,26 @@
 #include<iostream>
+#include<cmath>
 
 using namespace std;
 
+int adiff(int a , int b )
+{
+
+    int x , y ;
+    int c = abs(a-b);
+    x = c%360 ;
+    if (x <= 180)
+    {
+     y = x ;
+    }
+    else
+    {
+     y = 360 - x ;
+    }
+    
+    return y ;
+
+}
 
 int main(){
   cout << adiff(180,270);
